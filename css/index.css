@@ -1,0 +1,26 @@
+
+.presentation {
+    text-align: justify;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.presentation h1 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.section {
+    padding-bottom: 10px;
+}
+
+/* Ou changer couler quand hover */
+.paper {
+    background-color: #E7E9EC;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+.paper:hover {
+    background-color: #BFCCDA;
+}
