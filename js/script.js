@@ -98,12 +98,12 @@ for (var i=0; i<papers.length; i++) {
                 txt_abstract.style.padding = "5px"
                 txt_abstract.style.backgroundColor = "white"
 //                 link.style.paddingBottom = "10px"
-                txt_abstract.style.marginTop = "5px"
+//                 txt_abstract.style.marginTop = "5px"
             }
             else {
                 txt_abstract.innerHTML = ""
                 txt_abstract.style.padding = "0px"
-                txt_abstract.style.marginTop = "5px"
+//                 txt_abstract.style.marginTop = "5px"
 //                 link.style.paddingBottom = "0px"
             }
         }

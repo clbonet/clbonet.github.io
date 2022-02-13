@@ -33,6 +33,7 @@
 .txt_abstract {
     text-align:justify;
     border-radius: 5px;
+    margin-top: 5px;
 }
 
 .txt_bibtex {
@@ -42,3 +43,7 @@
 /*.copy {
     text-align: right;
 }*/
+
+.link a {
+    color:inherit;
+}
