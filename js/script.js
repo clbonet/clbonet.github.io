@@ -65,7 +65,7 @@ for (var i=0; i<papers.length; i++) {
 
             for (key in infos.bibtex) {
                 if (key!="cite" && key!="balise") {
-                    str += ",<br>"+spaces+"{"+infos.bibtex[key]+"}"
+                    str += ",<br>"+spaces+key+"={"+infos.bibtex[key]+"}"
                 }
             }
             str += "<br>}"
