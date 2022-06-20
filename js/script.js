@@ -6,14 +6,12 @@ var papers = document.getElementsByClassName("paper")
 var dict_papers = {
     "swgf": {
         bibtex:{
-            "balise":"misc",
-            "cite":"bonet2022slicedwasserstein",
+            "balise":"article",
+            "cite":"bonet2021slicedwasserstein",
             "title":"Sliced-Wasserstein Gradient Flows",
             "author":"Clément Bonet and Nicolas Courty and François Septier and Lucas Drumetz",
-            "year":"2022",
-            "eprint":"2110.10972",
-            "archivePrefix":"arXiv",
-            "primaryClass":"cs.LG"
+            "year":"2021",
+            "journal":"arXiv preprint arXiv:2110.10972"
         },
         abstract:"Minimizing functionals in the space of probability distributions can be done with Wasserstein gradient flows. To solve them numerically, a possible approach is to rely on the Jordan-Kinderlehrer-Otto (JKO) scheme which is analogous to the proximal scheme in Euclidean spaces. However, it requires solving a nested optimization problem at each iteration, and is known for its computational challenges, especially in high dimension. To alleviate it, very recent works propose to approximate the JKO scheme leveraging Brenier's theorem, and using gradients of Input Convex Neural Networks to parameterize the density (JKO-ICNN). However, this method comes with a high computational cost and stability issues. Instead, this work proposes to use gradient flows in the space of probability measures endowed with the sliced-Wasserstein (SW) distance. We argue that this method is more flexible than JKO-ICNN, since SW enjoys a closed-form differentiable approximation. Thus, the density at each step can be parameterized by any generative model which alleviates the computational burden and makes it tractable in higher dimensions."
     },
@@ -44,6 +42,17 @@ var dict_papers = {
             "publisher":"Multidisciplinary Digital Publishing Institute"
         },
         abstract:"In the context of optimal transport (OT) methods, the subspace detour approach was recently proposed by Muzellec and Cuturi. It consists of first finding an optimal plan between the measures projected on a wisely chosen subspace and then completing it in a nearly optimal transport plan on the whole space. The contribution of this paper is to extend this category of methods to the Gromov–Wasserstein problem, which is a particular type of OT distance involving the specific geometry of each distribution. After deriving the associated formalism and properties, we give an experimental illustration on a shape matching problem. We also discuss a specific cost for which we can show connections with the Knothe–Rosenblatt rearrangement."
+    },
+    "ssw": {
+        bibtex:{
+            "balise":"article",
+            "cite":"bonet2022spherical",
+            "title":"Spherical Sliced-Wasserstein",
+            "author":"Clément Bonet and Paul Berg and Nicolas Courty and François Septier and Lucas Drumetz and Minh-Tan Pham",
+            "year":"2022",
+            "journal":"arXiv preprint arXiv:2206.08780"
+        },
+        abstract:"Many variants of the Wasserstein distance have been introduced to reduce its original computational burden. In particular the Sliced-Wasserstein distance (SW), which leverages one-dimensional projections for which a closed-form solution of the Wasserstein distance is available, has received a lot of interest. Yet, it is restricted to data living in Euclidean spaces, while the Wasserstein distance has been studied and used recently on manifolds. We focus more specifically on the sphere, for which we define a novel SW discrepancy, which we call spherical Sliced- Wasserstein, making a first step towards defining SW discrepancies on manifolds. Our construction is notably based on closed-form solutions of the Wasserstein distance on the circle, together with a new spherical Radon transform. Along with efficient algorithms and the corresponding implementations, we illustrate its properties in several machine learning use cases where spherical representations of data are at stake: density estimation on the sphere, variational inference or hyperspherical auto-encoders."
     }
 }
 
