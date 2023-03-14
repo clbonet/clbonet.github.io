@@ -86,6 +86,17 @@ var dict_papers = {
             "journal":"arXiv preprint arXiv:2211.10066"
         },
         abstract:"It has been shown beneficial for many types of data which present an underlying hierarchical structure to be embedded in hyperbolic spaces. Consequently, many tools of machine learning were extended to such spaces, but only few discrepancies to compare probability distributions defined over those spaces exist. Among the possible candidates, optimal transport distances are well defined on such Riemannian manifolds and enjoy strong theoretical properties, but suffer from high computational cost. On Euclidean spaces,  sliced-Wasserstein distances, which leverage a closed-form of the Wasserstein distance in one dimension, are more computationally efficient, but are not readily available on hyperbolic spaces. In this work, we propose to derive novel hyperbolic sliced-Wasserstein discrepancies. These constructions use projections on the underlying geodesics either along horospheres or geodesics. We study and compare them on different tasks where hyperbolic representations are relevant, such as sampling or image classification."
+    },
+    "spdsw": {
+        bibtex:{
+            "balise":"article",
+            "cite":"bonet2023sliced",
+            "title":"Sliced-Wasserstein on Symmetric Positive Definite Matrices for M/EEG Signals",
+            "author":"Clément Bonet and Benoît Malézieux and Lucas Drumetz and Thomas Moreau and Matthieu Kowalski and Nicolas Courty",
+            "year":"2023",
+            "journal":"arXiv preprint arXiv:2303.05798"
+        },
+        abstract:"When dealing with electro or magnetoencephalography records, many supervised prediction tasks are solved by working with covariance matrices to summarize the signals. Learning with these matrices requires the usage of Riemanian geometry to account for their structure. In this paper, we propose a new method to deal with distributions of covariance matrices, and demonstrate its computational efficiency on M/EEG multivariate time series. More specifically, we define a Sliced-Wasserstein distance between measures of symmetric positive definite matrices that comes with strong theoretical guarantees. Then, we take advantage of its properties and kernel methods to apply this discrepancy to brain-age prediction from MEG data, and compare it to state-of-the-art algorithms based on Riemannian geometry. Finally, we show that it is an efficient surrogate to the Wasserstein distance in domain adaptation for Brain Computer Interface applications."
     }
 }
 
