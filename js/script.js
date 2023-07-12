@@ -100,13 +100,14 @@ var dict_papers = {
     },
     "spdsw_icml": {
         bibtex:{
-            "balise":"article",
+            "balise":"inproceedings",
             "cite":"bonet2023sliced",
             "title":"Sliced-Wasserstein on Symmetric Positive Definite Matrices for M/EEG Signals",
             "author":"Clément Bonet and Benoît Malézieux and Alain Rakotomamonjy and Lucas Drumetz and Thomas Moreau and Matthieu Kowalski and Nicolas Courty",
             "booktitle":"International Conference on Machine Learning",
             "year":"2023",
-            "organization":"PMLR"
+            "organization":"PMLR",
+            "pages":"2777--2805"
         },
         abstract:"When dealing with electro or magnetoencephalography records, many supervised prediction tasks are solved by working with covariance matrices to summarize the signals. Learning with these matrices requires the usage of Riemanian geometry to account for their structure. In this paper, we propose a new method to deal with distributions of covariance matrices, and demonstrate its computational efficiency on M/EEG multivariate time series. More specifically, we define a Sliced-Wasserstein distance between measures of symmetric positive definite matrices that comes with strong theoretical guarantees. Then, we take advantage of its properties and kernel methods to apply this discrepancy to brain-age prediction from MEG data, and compare it to state-of-the-art algorithms based on Riemannian geometry. Finally, we show that it is an efficient surrogate to the Wasserstein distance in domain adaptation for Brain Computer Interface applications."
     },
@@ -120,6 +121,17 @@ var dict_papers = {
             "journal":"arXiv preprint arXiv:2306.07176"
         },
         abstract:"Optimal transport (OT) has emerged as a powerful framework to compare probability measures, a fundamental task in many statistical and machine learning problems. Substantial advances have been made over the last decade in designing OT variants which are either computationally and statistically more efficient, or more robust to the measures and datasets to compare. Among them, sliced OT distances have been extensively used to mitigate optimal transport's cubic algorithmic complexity and curse of dimensionality. In parallel, unbalanced OT was designed to allow comparisons of more general positive measures, while being more robust to outliers. In this paper, we propose to combine these two concepts, namely slicing and unbalanced OT, to develop a general framework for efficiently comparing positive measures. We propose two new loss functions based on the idea of slicing unbalanced OT, and study their induced topology and statistical properties. We then develop a fast Frank-Wolfe-type algorithm to compute these loss functions, and show that the resulting methodology is modular as it encompasses and extends prior related work. We finally conduct an empirical analysis of our loss functions and methodology on both synthetic and real datasets, to illustrate their relevance and applicability."
+    },
+    "swgg": {
+        bibtex:{
+            "balise":"article",
+            "cite":"mahey2023fast",
+            "title":"Fast Optimal Transport through Sliced Wasserstein Generalized Geodesics",
+            "author":"Mahey, Guillaume and Chapel, Laetitia and Gasso, Gilles and Bonet, Clément and Courty, Nicolas",
+            "year":"2023",
+            "journal":"arXiv preprint arXiv:2307.01770"
+        },
+        abstract:"Wasserstein distance (WD) and the associated optimal transport plan have been proven useful in many applications where probability measures are at stake. In this paper, we propose a new proxy of the squared WD, coined min-SWGG, that is based on the transport map induced by an optimal one-dimensional projection of the two input distributions. We draw connections between min-SWGG and Wasserstein generalized geodesics in which the pivot measure is supported on a line. We notably provide a new closed form for the exact Wasserstein distance in the particular case of one of the distributions supported on a line allowing us to derive a fast computational scheme that is amenable to gradient descent optimization. We show that min-SWGG is an upper bound of WD and that it has a complexity similar to as Sliced-Wasserstein, with the additional feature of providing an associated transport plan. We also investigate some theoretical properties such as metricity, weak convergence, computational and topological properties. Empirical evidences support the benefits of min-SWGG in various contexts, from gradient flows, shape matching and image colorization, among others."
     }
 }
 
