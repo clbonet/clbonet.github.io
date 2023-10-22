@@ -86,6 +86,19 @@ var dict_papers = {
             "journal":"arXiv preprint arXiv:2211.10066"
         },
         abstract:"It has been shown beneficial for many types of data which present an underlying hierarchical structure to be embedded in hyperbolic spaces. Consequently, many tools of machine learning were extended to such spaces, but only few discrepancies to compare probability distributions defined over those spaces exist. Among the possible candidates, optimal transport distances are well defined on such Riemannian manifolds and enjoy strong theoretical properties, but suffer from high computational cost. On Euclidean spaces,  sliced-Wasserstein distances, which leverage a closed-form of the Wasserstein distance in one dimension, are more computationally efficient, but are not readily available on hyperbolic spaces. In this work, we propose to derive novel hyperbolic sliced-Wasserstein discrepancies. These constructions use projections on the underlying geodesics either along horospheres or geodesics. We study and compare them on different tasks where hyperbolic representations are relevant, such as sampling or image classification."
+    },    
+    "hsw_tagml": {
+        bibtex:{
+            "balise":"inproceedings",
+            "cite":"bonet2023hyperbolic",
+            "title":"Hyperbolic Sliced-Wasserstein via Geodesic and Horospherical Projections",
+            "author":"Clément Bonet and Laetitia Chapel and Lucas Drumetz and Nicolas Courty",
+            "year":"2023",
+            "organization":"PMLR",
+            "booktitle":"Proceedings of 2nd Annual Workshop on Topology, Algebra, and Geometry in Machine Learning (TAG-ML)",
+            "pages":"334--370"
+        },
+        abstract:"It has been shown beneficial for many types of data which present an underlying hierarchical structure to be embedded in hyperbolic spaces. Consequently, many tools of machine learning were extended to such spaces, but only few discrepancies to compare probability distributions defined over those spaces exist. Among the possible candidates, optimal transport distances are well defined on such Riemannian manifolds and enjoy strong theoretical properties, but suffer from high computational cost. On Euclidean spaces,  sliced-Wasserstein distances, which leverage a closed-form of the Wasserstein distance in one dimension, are more computationally efficient, but are not readily available on hyperbolic spaces. In this work, we propose to derive novel hyperbolic sliced-Wasserstein discrepancies. These constructions use projections on the underlying geodesics either along horospheres or geodesics. We study and compare them on different tasks where hyperbolic representations are relevant, such as sampling or image classification."
     },
     "spdsw": {
         bibtex:{
@@ -129,7 +142,18 @@ var dict_papers = {
             "title":"Fast Optimal Transport through Sliced Wasserstein Generalized Geodesics",
             "author":"Mahey, Guillaume and Chapel, Laetitia and Gasso, Gilles and Bonet, Clément and Courty, Nicolas",
             "year":"2023",
-            "journal":"arXiv preprint arXiv:2307.01770"
+            "booktitle":"International Conference on Machine Learning",
+        },
+        abstract:"Wasserstein distance (WD) and the associated optimal transport plan have been proven useful in many applications where probability measures are at stake. In this paper, we propose a new proxy of the squared WD, coined min-SWGG, that is based on the transport map induced by an optimal one-dimensional projection of the two input distributions. We draw connections between min-SWGG and Wasserstein generalized geodesics in which the pivot measure is supported on a line. We notably provide a new closed form for the exact Wasserstein distance in the particular case of one of the distributions supported on a line allowing us to derive a fast computational scheme that is amenable to gradient descent optimization. We show that min-SWGG is an upper bound of WD and that it has a complexity similar to as Sliced-Wasserstein, with the additional feature of providing an associated transport plan. We also investigate some theoretical properties such as metricity, weak convergence, computational and topological properties. Empirical evidences support the benefits of min-SWGG in various contexts, from gradient flows, shape matching and image colorization, among others."
+    },
+    "swgg_neurips": {
+        bibtex:{
+            "balise":"inproceedings",
+            "cite":"mahey2023fast",
+            "title":"Fast Optimal Transport through Sliced Wasserstein Generalized Geodesics",
+            "author":"Mahey, Guillaume and Chapel, Laetitia and Gasso, Gilles and Bonet, Clément and Courty, Nicolas",
+            "year":"2023",
+            "journal":"Advances in Neural Information Processing Systems"
         },
         abstract:"Wasserstein distance (WD) and the associated optimal transport plan have been proven useful in many applications where probability measures are at stake. In this paper, we propose a new proxy of the squared WD, coined min-SWGG, that is based on the transport map induced by an optimal one-dimensional projection of the two input distributions. We draw connections between min-SWGG and Wasserstein generalized geodesics in which the pivot measure is supported on a line. We notably provide a new closed form for the exact Wasserstein distance in the particular case of one of the distributions supported on a line allowing us to derive a fast computational scheme that is amenable to gradient descent optimization. We show that min-SWGG is an upper bound of WD and that it has a complexity similar to as Sliced-Wasserstein, with the additional feature of providing an associated transport plan. We also investigate some theoretical properties such as metricity, weak convergence, computational and topological properties. Empirical evidences support the benefits of min-SWGG in various contexts, from gradient flows, shape matching and image colorization, among others."
     }
