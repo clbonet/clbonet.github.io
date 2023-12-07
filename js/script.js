@@ -161,7 +161,7 @@ var dict_papers = {
         bibtex:{
             "balise":"phdthesis",
             "cite":"bonet2023leveraging",
-            "title":"Leveraging Optimal Transpot via Projections on Subspaces for Machine Learning Applications",
+            "title":"Leveraging Optimal Transport via Projections on Subspaces for Machine Learning Applications",
             "author":"Bonet, Clément",
             "year":"2023",
             "school":"Université de Bretagne Sud"
