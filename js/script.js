@@ -167,6 +167,17 @@ var dict_papers = {
             "school":"Université de Bretagne Sud"
         },
         abstract:"Optimal Transport has received much attention in Machine Learning as it allows to compare probability distributions by exploiting the geometry of the underlying space. However, in its original formulation, solving this problem suffers from a significant computational burden. Thus, a meaningful line of work consists at proposing alternatives to reduce this burden while still enjoying its properties. In this thesis, we focus on alternatives which use projections on subspaces. The main such alternative is the Sliced-Wasserstein distance, which we first propose to extend to Riemannian manifolds in order to use it in Machine Learning applications for which using such spaces has been shown to be beneficial in the recent years. We also study sliced distances between positive measures in the so-called unbalanced OT problem. Back to the original Euclidean Sliced-Wasserstein distance between probability measures, we study the dynamic of gradient flows when endowing the space with this distance in place of the usual Wasserstein distance. Then, we investigate the use of the Busemann function, a generalization of the inner product in metric spaces, in the space of probability measures. Finally, we extend the subspace detour approach to incomparable spaces using the Gromov-Wasserstein distance."
+    },
+    "chsw": {
+        bibtex:{
+            "balise":"article",
+            "cite":"bonet2024sliced",
+            "title":"Sliced-Wasserstein Distances and Flows on Cartan-Hadamard Manifolds",
+            "author":"Clément Bonet and Lucas Drumetz and Nicolas Courty",
+            "year":"2024",
+            "journal":"arXiv preprint arXiv:2403.06560"
+        },
+        abstract:"While many Machine Learning methods were developed or transposed on Riemannian manifolds to tackle data with known non Euclidean geometry, Optimal Transport (OT) methods on such spaces have not received much attention. The main OT tool on these spaces is the Wasserstein distance which suffers from a heavy computational burden. On Euclidean spaces, a popular alternative is the Sliced-Wasserstein distance, which leverages a closed-form solution of the Wasserstein distance in one dimension, but which is not readily available on manifolds. In this work, we derive general constructions of Sliced-Wasserstein distances on Cartan-Hadamard manifolds, Riemannian manifolds with non-positive curvature, which include among others Hyperbolic spaces or the space of Symmetric Positive Definite matrices. Then, we propose different applications. Additionally, we derive non-parametric schemes to minimize these new distances by approximating their Wasserstein gradient flows."
     }
 }
 
