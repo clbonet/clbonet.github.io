@@ -178,6 +178,17 @@ var dict_papers = {
             "journal":"arXiv preprint arXiv:2403.06560"
         },
         abstract:"While many Machine Learning methods were developed or transposed on Riemannian manifolds to tackle data with known non Euclidean geometry, Optimal Transport (OT) methods on such spaces have not received much attention. The main OT tool on these spaces is the Wasserstein distance which suffers from a heavy computational burden. On Euclidean spaces, a popular alternative is the Sliced-Wasserstein distance, which leverages a closed-form solution of the Wasserstein distance in one dimension, but which is not readily available on manifolds. In this work, we derive general constructions of Sliced-Wasserstein distances on Cartan-Hadamard manifolds, Riemannian manifolds with non-positive curvature, which include among others Hyperbolic spaces or the space of Symmetric Positive Definite matrices. Then, we propose different applications. Additionally, we derive non-parametric schemes to minimize these new distances by approximating their Wasserstein gradient flows."
+    },
+    "mwgd": {
+        bibtex:{
+            "balise":"article",
+            "cite":"bonet2024mirror",
+            "title":"Mirror and Preconditioned Gradient Descent in Wasserstein Space",
+            "author":"Clément Bonet and Théo Uscidda and Adam David and Pierre-Cyril Aubin-Frankowski and Anna Korba",
+            "year":"2024",
+            "journal":"arXiv preprint arXiv:2406.08938"
+        },
+        abstract:"As the problem of minimizing functionals on the Wasserstein space encompasses many applications in machine learning, different optimization algorithms on Rd have received their counterpart analog on the Wasserstein space. We focus here on lifting two explicit algorithms: mirror descent and preconditioned gradient descent. These algorithms have been introduced to better capture the geometry of the function to minimize and are provably convergent under appropriate (namely relative) smoothness and convexity conditions. Adapting these notions to the Wasserstein space, we prove guarantees of convergence of some Wasserstein-gradient-based discrete-time schemes for new pairings of objective functionals and regularizers. The difficulty here is to carefully select along which curves the functionals should be smooth and convex. We illustrate the advantages of adapting the geometry induced by the regularizer on ill-conditioned optimization tasks, and showcase the improvement of choosing different discrepancies and geometries in a computational biology task of aligning single-cells."
     }
 }
 
@@ -198,8 +209,11 @@ for (var i=0; i<papers.length; i++) {
             }
 
             for (key in infos.bibtex) {
-                if (key!="cite" && key!="balise") {
+                if (key!="cite" && key!="balise" && key!="title") {
                     str += ",<br>"+spaces+key+"={"+infos.bibtex[key]+"}"
+                }
+                if (key=="title") {
+                    str += ",<br>"+spaces+key+"={{"+infos.bibtex[key]+"}}"
                 }
             }
             str += "<br>}"
