@@ -38,12 +38,42 @@
 
 .txt_bibtex {
     border-radius: 5px;
+    position: relative;
 }
 
-/*.copy {
-    text-align: right;
-}*/
+.copy {
+/*     text-align: right; */
+/*     float: right; */
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
 
 .link a {
     color:inherit;
+}
+
+.border-dashed {
+/*     border: 1px dashed #FF0000; */
+    border: 1px dashed #FFA500;
+}
+
+.no-hover:hover {
+    background-color: inherit !important; /* Prevents background color change */
+    color: inherit !important;            /* Prevents text color change */
+    border: 1px dashed #FF0000;     /* Prevents border color change */
+    cursor: default;                      /* Keeps the default cursor, can change to 'auto' or 'not-allowed' */
+    pointer-events: none;  /* Disables all mouse events, including clicks */
+    cursor: not-allowed;   /* Changes the cursor to indicate non-clickable */
+}
+
+.spotlight-badge {
+    background-color: #F1C40F;
+    color: black;
+/*     font-weight: bold; */
+    border: 1px solid black; /* Pour garder la même apparence de contour */
+    font-size: 0.875rem; /* Correspond à la taille du texte des boutons btn-sm */
+    padding: 0.25rem 0.5rem; /* Même taille de padding que btn-sm */
+/*     cursor: not-allowed; */
+    cursor: default !important; /* Curseur par défaut */
 }
