@@ -76,10 +76,10 @@ const dict_papers = {
     "usw_tmlr": {
         bibtex:{
             "balise":"article",
-            "cite":"bonet2024slicing",
+            "cite":"bonet2025slicing",
             "title":"Slicing Unbalanced Optimal Transport",
             "author":"Clément Bonet and Kimia Nadjahi and Thibault Séjourné and Kilian Fatras and Nicolas Courty",
-            "year":"2024",
+            "year":"2025",
             "journal":"Transactions on Machine Learning Research"
         },
         abstract:"Optimal transport (OT) has emerged as a powerful framework to compare probability measures, a fundamental task in many statistical and machine learning problems. Substantial advances have been made over the last decade in designing OT variants which are either computationally and statistically more efficient, or more robust to the measures and datasets to compare. Among them, sliced OT distances have been extensively used to mitigate optimal transport's cubic algorithmic complexity and curse of dimensionality. In parallel, unbalanced OT was designed to allow comparisons of more general positive measures, while being more robust to outliers. In this paper, we propose to combine these two concepts, namely slicing and unbalanced OT, to develop a general framework for efficiently comparing positive measures. We propose two new loss functions based on the idea of slicing unbalanced OT, and study their induced topology and statistical properties. We then develop a fast Frank-Wolfe-type algorithm to compute these loss functions, and show that the resulting methodology is modular as it encompasses and extends prior related work. We finally conduct an empirical analysis of our loss functions and methodology on both synthetic and real datasets, to illustrate their relevance and applicability."
@@ -131,10 +131,10 @@ const dict_papers = {
     "ddeq": {
         bibtex:{
             "balise":"article",
-            "cite":"geuter2024ddeqs",
+            "cite":"geuter2025ddeqs",
             "title":"DDEQs: Distributional Deep Equilibrium Models through Wasserstein Gradient Flows",
             "author":"Jonathan Geuter and Clément Bonet and Anna Korba and David Alvarez-Melis",
-            "year":"2024",
+            "year":"2025",
             "journal":"arXiv preprint arXiv:"
         },
         abstract:"Deep Equilibrium Models (DEQs) are a class of implicit neural networks that solve for a fixed point of a neural network in their forward pass. Traditionally, DEQs take sequences as inputs, but have since been applied to a variety of data. In this work, we present Distributional Deep Equilibrium Models (DDEQs), extending DEQs to discrete measure inputs, such as sets or point clouds. We provide a theoretically grounded framework for DDEQs. Leveraging Wasserstein gradient flows, we show how the forward pass of the DEQ can be adapted to find fixed points of discrete measures under permutation-invariance, and derive adequate network architectures for DDEQs. In experiments, we show that they can compete with state-of-the-art models in tasks such as point cloud classification and point cloud completion, while being significantly more parameter-eﬀicient."
