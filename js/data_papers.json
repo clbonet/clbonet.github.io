@@ -109,13 +109,16 @@ const dict_papers = {
     "chsw": {
         bibtex:{
             "balise":"article",
-            "cite":"bonet2024sliced",
+            "cite":"bonet2025sliced",
             "title":"Sliced-Wasserstein Distances and Flows on Cartan-Hadamard Manifolds",
             "author":"Clément Bonet and Lucas Drumetz and Nicolas Courty",
-            "year":"2024",
-            "journal":"arXiv preprint arXiv:2403.06560"
+            "year":"2025",
+            "journal":"Journal of Machine Learning Research",
+            "volume":"26",
+            "number":"32",
+            "pages":"1--76"
         },
-        abstract:"While many Machine Learning methods were developed or transposed on Riemannian manifolds to tackle data with known non Euclidean geometry, Optimal Transport (OT) methods on such spaces have not received much attention. The main OT tool on these spaces is the Wasserstein distance which suffers from a heavy computational burden. On Euclidean spaces, a popular alternative is the Sliced-Wasserstein distance, which leverages a closed-form solution of the Wasserstein distance in one dimension, but which is not readily available on manifolds. In this work, we derive general constructions of Sliced-Wasserstein distances on Cartan-Hadamard manifolds, Riemannian manifolds with non-positive curvature, which include among others Hyperbolic spaces or the space of Symmetric Positive Definite matrices. Then, we propose different applications. Additionally, we derive non-parametric schemes to minimize these new distances by approximating their Wasserstein gradient flows."
+        abstract:"While many Machine Learning methods were developed or transposed on Riemannian manifolds to tackle data with known non Euclidean geometry, Optimal Transport (OT) methods on such spaces have not received much attention. The main OT tool on these spaces is the Wasserstein distance which suffers from a heavy computational burden. On Euclidean spaces, a popular alternative is the Sliced-Wasserstein distance, which leverages a closed-form solution of the Wasserstein distance in one dimension, but which is not readily available on manifolds. In this work, we derive general constructions of Sliced-Wasserstein distances on Cartan-Hadamard manifolds, Riemannian manifolds with non-positive curvature, which include among others Hyperbolic spaces or the space of Symmetric Positive Definite matrices. Then, we propose different applications such as classification of documents with a suitably learned ground cost on a manifold, and data set comparison on a product manifold. Additionally, we derive non-parametric schemes to minimize these new distances by approximating their Wasserstein gradient flows."
     },
     "mwgd_neurips": {
         bibtex:{
@@ -130,12 +133,12 @@ const dict_papers = {
     },
     "ddeq": {
         bibtex:{
-            "balise":"article",
+            "balise":"inproceedings",
             "cite":"geuter2025ddeqs",
             "title":"DDEQs: Distributional Deep Equilibrium Models through Wasserstein Gradient Flows",
             "author":"Jonathan Geuter and Clément Bonet and Anna Korba and David Alvarez-Melis",
             "year":"2025",
-            "journal":"arXiv preprint arXiv:"
+            "booktitle":"The 28th International Conference on Artificial Intelligence and Statistics"
         },
         abstract:"Deep Equilibrium Models (DEQs) are a class of implicit neural networks that solve for a fixed point of a neural network in their forward pass. Traditionally, DEQs take sequences as inputs, but have since been applied to a variety of data. In this work, we present Distributional Deep Equilibrium Models (DDEQs), extending DEQs to discrete measure inputs, such as sets or point clouds. We provide a theoretically grounded framework for DDEQs. Leveraging Wasserstein gradient flows, we show how the forward pass of the DEQ can be adapted to find fixed points of discrete measures under permutation-invariance, and derive adequate network architectures for DDEQs. In experiments, we show that they can compete with state-of-the-art models in tasks such as point cloud classification and point cloud completion, while being significantly more parameter-eﬀicient."
     }

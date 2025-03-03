@@ -76,4 +76,5 @@
     padding: 0.25rem 0.5rem; /* Même taille de padding que btn-sm */
 /*     cursor: not-allowed; */
     cursor: default !important; /* Curseur par défaut */
+/*     float: right; */
 }
