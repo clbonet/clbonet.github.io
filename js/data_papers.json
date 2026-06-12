@@ -176,4 +176,27 @@ const dict_papers = {
         },
         abstract:"The Busemann function has recently found much interest in a variety of geometric machine learning problems, as it naturally defines projections onto geodesic rays of Riemannian manifolds and generalizes the notion of hyperplanes. As several sources of data can be conveniently modeled as probability distributions, it is natural to study this function in the Wasserstein space, which carries a rich formal Riemannian structure induced by Optimal Transport metrics. In this work, we investigate the existence and computation of Busemann functions in Wasserstein space, which admits geodesic rays. We establish closed-form expressions in two important cases: one-dimensional distributions and Gaussian measures. These results enable explicit projection schemes for probability distributions on $\mathbb{R}$, which in turn allow us to define novel Sliced-Wasserstein distances over Gaussian mixtures and labeled datasets. We demonstrate the efficiency of those original schemes on synthetic datasets as well as transfer learning problems."
     },
+    "unif_gwf": {
+        bibtex:{
+            "balise":"inproceedings",
+            "cite":"caucheteux2026unifying",
+            "title":"A Unifying View of Variational Generative Wasserstein Flows",
+            "author":"Paul Caucheteux and Clément Bonet and Anna Korba",
+            "booktitle":"International Conference on Machine Learning",
+            "year":"2026",
+            "organization":"PMLR",
+        },
+        abstract:"Many modern generative models can be viewed as minimizing divergences between probability distributions, yet they rely on different algorithmic and geometric principles. Wasserstein gradient flows provide a continuous-time formulation for optimizing over distributions, and can be approximated through their implicit discretization via the Jordan–Kinderlehrer–Otto (JKO) scheme. In this work, we present a unified theoretical framework for generative modeling based on Wasserstein gradient flows, which we refer to as Generative Wasserstein Flows (GWF). We show that a broad class of existing methods can be derived as instances of parametric JKO schemes for f-divergence objectives, and we establish equivalences between several recently proposed algorithms. We extend this framework beyond f-divergences to Integral Probability Metrics and squared Maximum Mean Discrepancy, deriving new JKO-based generative algorithms, and clarifying their connections with GANs. We study empirically the impact of the JKO regularization for a wide set of objectives. Finally, we analyze parametric Wasserstein flows, where the dynamics are restricted to distributions induced by parametrized maps."
+    },
+    "wasserstein_dc_arxiv":{
+        bibtex:{
+            "balise":"article",
+            "cite":"bonet2025difference",
+            "title":"Difference of Convex Programming in the Wasserstein Space with Applications to MMD Optimization",
+            "author":"Clément Bonet and Pierre-Cyril Aubin-Frankowski and Youssef Mroueh",
+            "year":"2026",
+            "journal":"arXiv preprint arXiv:."
+        },
+        abstract:"Optimizing functionals over the space of probability measures is now ubiquitous in machine learning. A widely used approach is to perform the optimization directly over the Wasserstein space, but many objective functionals of practical interest are non-convex along Wasserstein geodesics, making the analysis of standard first-order methods challenging. In this work, we study a class of objectives over the Wasserstein space that admit a difference-of-convex (DC) decomposition and we lift the classical convex-concave procedure (CCCP) to this setting. Under smoothness and strong convexity assumptions on the convex components of the decomposition, we prove almost stationarity along the iterates of the resulting algorithm. Our main focus is on the Maximum Mean Discrepancy (MMD) and the Energy Distance (ED) functionals, for which we develop explicit Wasserstein DC decompositions, and establish local convergence of the scheme under mild assumptions. Empirically, we show that well-chosen DC decompositions yield faster and more stable convergence than Wasserstein gradient descent on these MMD objectives."
+    },
 }
