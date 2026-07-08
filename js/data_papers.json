@@ -191,7 +191,7 @@ const dict_papers = {
     "wasserstein_dc_arxiv":{
         bibtex:{
             "balise":"article",
-            "cite":"bonet2025difference",
+            "cite":"bonet2026difference",
             "title":"Difference of Convex Programming in the Wasserstein Space with Applications to MMD Optimization",
             "author":"Clément Bonet and Pierre-Cyril Aubin-Frankowski and Youssef Mroueh",
             "year":"2026",
