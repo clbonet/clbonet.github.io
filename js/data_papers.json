@@ -206,8 +206,19 @@ const dict_papers = {
             "title":"Difference of Convex Programming in the Wasserstein Space with Applications to MMD Optimization",
             "author":"Clément Bonet and Pierre-Cyril Aubin-Frankowski and Youssef Mroueh",
             "year":"2026",
-            "booktitle":"Fourty Conference on Neural Information Processing Systems"
+            "booktitle":"The Fortieth Annual Conference on Neural Information Processing Systems"
         },
         abstract:"Optimizing functionals over the space of probability measures is now ubiquitous in machine learning. A widely used approach is to perform the optimization directly over the Wasserstein space, but many objective functionals of practical interest are non-convex along Wasserstein geodesics, making the analysis of standard first-order methods challenging. In this work, we study a class of objectives over the Wasserstein space that admit a difference-of-convex (DC) decomposition and we lift the classical convex-concave procedure (CCCP) to this setting. Under smoothness and strong convexity assumptions on the convex components of the decomposition, we prove almost stationarity along the iterates of the resulting algorithm. Our main focus is on the Maximum Mean Discrepancy (MMD) and the Energy Distance (ED) functionals, for which we develop explicit Wasserstein DC decompositions, and establish local convergence of the scheme under mild assumptions. Empirically, we show that well-chosen DC decompositions yield faster and more stable convergence than Wasserstein gradient descent on these MMD objectives."
+    },
+    "lifted_pca_arxiv":{
+        bibtex:{
+            "balise":"article",
+            "cite":"bigot2026lifting",
+            "title":"Lifting PCA in the Wasserstein Space",
+            "author":"Jérémie Bigot and Clément Bonet",
+            "year":"2026",
+            "journal":"arXiv preprint arXiv:2610.29679"
+        },
+        abstract:"Principal Component Analysis (PCA) is a fundamental tool for statistical dimension reduction, yet no canonical extension to distribution-valued data has emerged within the framework of optimal transport. While Wasserstein barycenters and Wasserstein least-squares regression provide canonical liftings of Euclidean averaging and linear regression in the Wasserstein space, an analogous principle for PCA has remained unexplored. In this paper, we introduce Lifted PCA, a canonical extension of Euclidean PCA to Wasserstein space, obtained through the framework of lifting functionals in the space of probability measures by convex extension. Starting from the classical variational formulations of PCA on the Stiefel and Grassmann manifolds, we derive two equivalent minimization problems over probability measures supported on these manifolds that correspond to Wasserstein barycenters with generalized costs. We establish an exact analogue of the equivalence between the Stiefel and Grassmann formulations of Euclidean PCA, preserving PCA's original variational structure under lifting. We further derive dual formulations and optimality conditions, and establish equivalences with multimarginal optimal transport and matching-for-teams problems. We also establish statistical consistency for empirical estimators and develop computational algorithms based on the Wasserstein barycenter formulation over the Stiefel manifold. Whereas Euclidean PCA summarizes vectors through projections onto an optimal low-dimensional linear subspace, Lifted PCA summarizes probability distributions through an optimal probability measure supported on multiple low-dimensional subspaces. Numerical experiments on distributional datasets illustrate the practical performance of the proposed methodology and its benefits for distributional data analysis."
     },
 }
